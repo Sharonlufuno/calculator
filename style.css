@@ -1,0 +1,49 @@
+:root{
+  box-sizing: border-box;
+  font-size: 30px;
+}
+
+body{
+  display: flex;
+  height: 100vh;
+  background-color: pink;
+
+}
+
+.container{
+    height: 406px;
+    width: 296px;
+    padding: 10px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 25px 80px 48px 48px 48px 48px 48px;
+    grid-gap: 10px;
+}
+
+
+div{
+  border: 1px solid black;
+}
+
+#heading{
+  grid-column: span 4;
+  text-align: center;
+}
+#screen{
+  background: white;
+  grid-column: span 4;
+  height: 80px;
+}
+#equals{
+  grid-row: span 2;
+}
+#zero{
+  grid-column: span 2;
+}
+.btn,
+.ce,
+.ac{
+background: #ba324f;
+
+}
