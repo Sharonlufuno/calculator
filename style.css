@@ -6,7 +6,8 @@
 body{
   display: flex;
   height: 100vh;
-  background-color: pink;
+  background: pink;
+  box-shadow:
 
 }
 
@@ -19,7 +20,9 @@ body{
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 25px 80px 48px 48px 48px 48px 48px;
     grid-gap: 10px;
-}
+    background: grey;
+    border-radius: 4%;
+  }
 
 
 div{
@@ -30,20 +33,29 @@ div{
   grid-column: span 4;
   text-align: center;
 }
+
 #screen{
-  background: white;
+  background: lightblue;
   grid-column: span 4;
   height: 80px;
 }
+
 #equals{
   grid-row: span 2;
+  color:blue;
 }
+
 #zero{
   grid-column: span 2;
 }
+
 .btn,
 .ce,
 .ac{
-background: #ba324f;
+background: lightgrey;
+text-align: center;
+vertical-align: middle;
+line-height: 25px;
+border-radius: 10%;
 
 }
